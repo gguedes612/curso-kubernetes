@@ -1,0 +1,9 @@
+Controller Manager é o "Cérebro" por traz de toda automação Kubernetes, monitorando objetos presentes no cluster e age de acordo com as necessidades.
+
+Replication Controller faz parte do Controller Manager, ajuda a executar multiplas intancias de um pod/container no nosso cluster kubernetes. Faz isso replicando um pod/container existente fazendo com que tenhamos uma copia exata.
+
+Balanceamento de Carga e Scale up/down em varios nodes
+
+Replication Controller X ReplicaSet
+- Ambos possuem o mesmo proposito, mas não sao a mesma coisa
+

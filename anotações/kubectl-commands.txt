@@ -9,3 +9,5 @@ kubectl describe pod nginx
 kubectl create -f nginx.yaml
 
 kubectl apply -f nginx.yaml
+
+kubectl delete pod nginx
