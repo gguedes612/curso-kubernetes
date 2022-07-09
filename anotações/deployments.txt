@@ -1,0 +1,11 @@
+Deployment - Publicar nossa aplicação
+
+Rollback - Desfazer toda a aplicação/atualização
+
+Updates - Atualizações
+
+Estrategia de Deployment
+- RollingUpdate - uma estancia por vez, deixando a aplicação disponivel
+- Recreate - Recriar todo o ambiente do zero
+
+A ferramenta deployment cria um novo replicaset identico ao original, e vai fazendo a atualização um por um se a estrategia for rollingupdate ou todos de uma vez com recreate

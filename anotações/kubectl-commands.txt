@@ -11,3 +11,18 @@ kubectl create -f nginx.yaml
 kubectl apply -f nginx.yaml
 
 kubectl delete pod nginx
+
+kubectl get replicaset
+
+kubectl get deployment
+
+kubectl get all
+
+kubectl rollout status deployment/frontend-dp
+
+kubectl rollout history deployment/frontend-dp
+
+kubectl rollout undo deployment/frontend-dp
+
+kubectl create -f deployments/dp.yaml --save-config --record
+
