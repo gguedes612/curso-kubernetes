@@ -26,3 +26,12 @@ kubectl rollout undo deployment/frontend-dp
 
 kubectl create -f deployments/dp.yaml --save-config --record
 
+kubectl get namespace
+
+kubectl get pods -n kube-system
+
+kubectl create frontend --save-config
+
+kubectl config set-context --current --namespace=frontend
+
+kubkubectl exec -it webapp-7c7564f5fb-vwgfs -- bashectl exec -it webapp-7c7564f5fb-vwgfs -- bash

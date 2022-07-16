@@ -1,0 +1,7 @@
+Namespaces em kubernetes é um espaço no qual separamos nossos recursos dentro do kubernetes em areas separadas.
+
+Ao criar um objeto sem informar namespace, sera criado na namespace default(padrão)
+
+Não é recomendado criar objetos kubernetes nos namespaces internos do kubernetes.
+
+FQDN 
