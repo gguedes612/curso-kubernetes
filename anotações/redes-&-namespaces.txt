@@ -4,4 +4,10 @@ Ao criar um objeto sem informar namespace, sera criado na namespace default(padr
 
 Não é recomendado criar objetos kubernetes nos namespaces internos do kubernetes.
 
-FQDN 
+FQDN: 
+kubernetes.default.svc.cluster.local
+
+kubernetes -> serviço
+default -> namespace padrão do kubernetes
+svc -> Serviço (kind: Service)
+cluster.local -> nome do cluster
