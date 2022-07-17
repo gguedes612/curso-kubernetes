@@ -3,3 +3,7 @@ minikube start
 minikube status
 
 minikube delete
+
+minikube ip
+
+minikube service frontend-svc ip
