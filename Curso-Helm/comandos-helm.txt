@@ -1,0 +1,19 @@
+helm repo list
+
+helm repo add bitnami https://charts.bitnami.com/bitnami
+
+helm repo update
+
+helm install my-release bitnami/phpmyadmin
+
+kubectl port-forward --namespace default svc/teste-phpmyadmin 8080:80
+
+helm list -A
+
+helm uninstall my-release
+
+helm create meuchart
+
+helm install meuchart-v1 ./meuchart
+
+helm get manifest meuchart-v1

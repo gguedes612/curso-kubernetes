@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Release.Name }}-configmap
+data:
+  myvalue: {{  .Values.myvalue | default "Hello World" | quote  }}
+  bebida: {{ .Values.favorita.bebida | quote  }}
+  comida: {{ .Values.favorita.comida | upper | quote }}
+  
+  
+  {{ if eq .Values.favorita.bebida "café"  }}
+  caneca: "Sim"
+  {{ else }}
+  caneca: "Não"
+  {{ end }}
+
+  {{ with .Values.favorita }}
+  bebida: {{ .bebida}}
+  comida: {{ .comida}}  
+  {{ end }}
